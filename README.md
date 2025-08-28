@@ -8,7 +8,7 @@ Issues to consider for supervised models :
 
 Overfitting : If a model has significantly higher prediction accuracy for the training examples than it has for examples that has not used for training, then the model is said to be overfit. When error occurs while predicting the output for a sample input that was not used for training, it is known as a generalization error. When developing a model, the goal should be to minimize generalization error. One way to ensure that overfitting does not occur is the minimize the noise level in training data.
 
-Model Evaluation
+# Model Evaluation
 
 For the pupose of this project, I have used 3 CSV data files here :
 “train.csv” contains 8,000 rows and 11 columns. The first column ‘y’ is the output variable with 4 classes: 0, 1, 2, 3. The remaining 10 columns contain input features: x1, …, x10. 
