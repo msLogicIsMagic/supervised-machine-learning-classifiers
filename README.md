@@ -1,4 +1,4 @@
-## Supervised Machine Learning Classifiers
+# Supervised Machine Learning Classifiers
 
 Supervised machine learning is one of the three common machine learning paradigms, the other two being, unsupervised and reinforcement learning. In this porject, I am focusing on supervised machine learning. Supervised machine learning learns from a set of labeled training examples so that it can predict output labels for inputs that have not be used for training. Each labeled training example is in the form of a pair (x,y) where x represents the values of the input features and y is the output label. The algorithm learns a function f that maps the input to an output, f(x) = y. This function is known as the supervised learning model.
 
@@ -14,7 +14,7 @@ Methods to prevent overfitting :
 2. Reduce the influence of individual training examples
    		A noisy training data misleads the learning algorithm into learning relationships that dont exist. This is because noisy training data do not represent the true underlying rwlationship between inputs and output. We should make sure that the individual training examples do not have a disproportionate influence on the model.
 
-# Model Evaluation
+## Model Evaluation
 
 When training and testing a supervised machine learning classifier, the labeled sample data is split into 2 parts : tarining data and testing data. The common split ratio is 70% for training and 30% for testing. This is the most widely used and often recommended split which provides a substantial amount of data for the model to learn from while also reserving a good amount for independent testing and evaluation.
 
@@ -27,11 +27,11 @@ As you can see, the labeled sample data is divided in a 80-20 split which provid
 
 It is important to note that training samples should never be used to evaluate a model. 
 
-# Hyper Parameter Tuning
+## Hyper Parameter Tuning
 
 To prevent overfitting, we experiment and adjust the hyper parameters of a model. This is known as hyper parameter tuning. When conducting hyper parameter tuning, we should not use test data. A portion of the training data is used for this purpose. Samples used for hyper parameter tuning are called validation sample. 
 
-# k-fold cross validation
+## k-fold Cross Validation
 
 I have used 4-fold cross-validation with the 8,000 labeled exampled from “train.csv” to identify a classifier that achieves mean cross-validation accuracy of at least 0.97. Here, I have experimented with several of the Scikit-Learn classifiers such as DecisionTreeClassifier, RandomForestClassifier, ExtraTreesClassifier, KNeighborsClassifier, GaussianNB, SVC, LogisticRegression, and MLPClassifier. 
 
