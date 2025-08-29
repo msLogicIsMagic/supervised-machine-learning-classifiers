@@ -33,6 +33,18 @@ To prevent overfitting, we experiment and adjust the hyper parameters of a model
 
 ## k-fold Cross Validation
 
+k-fold cross validation is the method used to tune the hyper parameters of a model and evaluate models. 
+
+Step 1 : Suppose there are n labeled training samples. This is partitioned into k subsets where each partition contains n/k samples.
+Step 2 : For each partition i, 
+			a) Train the model on samples in the k-1 partitions, and
+   			b) Calculate and collect the evaluation metrics using the samples in partition i 
+Step 3 : Calculate the average value of the evaluation metrics from the k trials.
+
+Benefits of k-fold cross validation are :
+1. The training sample is used efficiently.
+2. Since multiple trials are done, it is able to achieve more reliable results.
+
 I have used 4-fold cross-validation with the 8,000 labeled exampled from “train.csv” to identify a classifier that achieves mean cross-validation accuracy of at least 0.97. Here, I have experimented with several of the Scikit-Learn classifiers such as DecisionTreeClassifier, RandomForestClassifier, ExtraTreesClassifier, KNeighborsClassifier, GaussianNB, SVC, LogisticRegression, and MLPClassifier. 
 
 Given below are the mean cross-validation accuracy achieved with different classifiers :
