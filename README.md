@@ -110,6 +110,6 @@ Non-default hyper parameters :
 
 Mean cross-validation accuracy: 0.9805 (rounded to 4 decimal places)
 
-###An important question to consider here is : what if we fail to achieve satisfactory results with a model ?
+An important question to consider here is : what if we fail to achieve satisfactory results with a model ?
 
 Despite experimenting with several combinations of the hyper parameter values, sometimes the model may not be able achieve a satisfactory cross-validation accuracy. There may be various reasons for this :  the input features used may not be the right ones that can be used to determine the output, insignificant input features may confuse the model, assumptions underlying the model may not be satisfied in the problem domain, etc. Developing an acceptable supervised machine learning model requires a good understanding of the underlying assumptions of a model and the role of its key hyper parameters 
