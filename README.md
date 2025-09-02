@@ -50,12 +50,19 @@ I have used 4-fold cross-validation with the 8,000 labeled exampled from “trai
 Given below are the mean cross-validation accuracy achieved with different classifiers :
 
 GaussianNB : 0.9344
+
 DecisionTreeClassifier : 0.9126
+
 RandomForestClassifier : 0.9667
+
 ExtraTreesClassifier : 0.9737
+
 KNeighborsClassifier : 0.9774
+
 LogisticRegression : 0.9646
+
 SVC : 0.9794
+
 MLPClassifier : 0.9709
 
 Here, we can see that 4 classifiers are able to achieve a mean cross-validation accuracy of atleast 0.97 : ExtraTreesClassifier, KNeighborsClassifier, SVC and MLPClassifier.
