@@ -45,7 +45,31 @@ Benefits of k-fold cross validation are :
 1. The training sample is used efficiently.
 2. Since multiple trials are done, it is able to achieve more reliable results.
 
-I have used 4-fold cross-validation with the 8,000 labeled exampled from “train.csv” to identify a classifier that achieves mean cross-validation accuracy of at least 0.97. Here, I have experimented with several of the Scikit-Learn classifiers such as DecisionTreeClassifier, RandomForestClassifier, ExtraTreesClassifier, KNeighborsClassifier, GaussianNB, SVC, LogisticRegression, and MLPClassifier. 
+I have used 4-fold cross-validation with the 8,000 labeled exampled from “train.csv” to identify a classifier that achieves mean cross-validation accuracy of at least 0.97. Here, I have experimented with several of the Scikit-Learn classifiers such as DecisionTreeClassifier, RandomForestClassifier, ExtraTreesClassifier, KNeighborsClassifier, GaussianNB, SVC, LogisticRegression, and MLPClassifier.
+
+# Evaluation Metrics for a Classification Model
+
+The 4 most commonly used metrics used to evaluate a classification model are : 
+	1. Accuracy
+ 	2. Precision
+    3. Recall
+	4. F1 Score
+
+These metrics may have a value that ranges from 0 to 1. The higher the value, the better it is for the model. These values are calculated using the confusion matrix.
+
+The confusion matrix is a matrix where a row r represents the number of samples that are labeled as class r and the column c represents the number of samples that are predicted as class c.
+
+Accuracy can be thought of as the proportion of correct predictions made.
+
+Precision for class k is the ratio of the number of correctly predicted samples in class k by the the number of samples predicted as class k.
+
+Recall for class k is the ratio of the number of correctly predicted samples in class k by the the number of samples labeled as class k.
+
+F1 Score for class k is the harmonic mean of precision and recall for class k 
+
+	F1 Score  = 2 x precision x recall / (precision + recall)
+
+A classification report contains the precision, recall and F1 scores for all the classes.
 
 Given below are the mean cross-validation accuracy achieved with different classifiers :
 
@@ -85,3 +109,7 @@ Non-default hyper parameters :
 	verbose: False
 
 Mean cross-validation accuracy: 0.9805 (rounded to 4 decimal places)
+
+An important question to consider here is : what if we fail to achieve satisfactory results with a model ?
+
+Despite experimenting with several combinations of the hyper parameter values, sometimes the model may not be able achieve a satisfactory cross-validation accuracy. There may be various reasons for this :  the input features used may not be the right ones that can be used to determine the output, insignificant input features may confuse the model, assumptions underlying the model may not be satisfied in the problem domain, etc. Developing an acceptable supervised machine learning model requires a good understanding of the underlying assumptions of a model and the role of its key hyper parameters 
