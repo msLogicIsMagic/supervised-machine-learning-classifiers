@@ -49,21 +49,14 @@ I have used 4-fold cross-validation with the 8,000 labeled exampled from “trai
 
 Given below are the mean cross-validation accuracy achieved with different classifiers :
 
-GaussianNB : 0.9344
-
-DecisionTreeClassifier : 0.9126
-
-RandomForestClassifier : 0.9667
-
-ExtraTreesClassifier : 0.9737
-
-KNeighborsClassifier : 0.9774
-
-LogisticRegression : 0.9646
-
-SVC : 0.9794
-
-MLPClassifier : 0.9709
+	GaussianNB : 0.9344
+	DecisionTreeClassifier : 0.9126
+	RandomForestClassifier : 0.9667
+	ExtraTreesClassifier : 0.9737
+	KNeighborsClassifier : 0.9774
+	LogisticRegression : 0.9646
+	SVC : 0.9794
+	MLPClassifier : 0.9709
 
 Here, we can see that 4 classifiers are able to achieve a mean cross-validation accuracy of atleast 0.97 : ExtraTreesClassifier, KNeighborsClassifier, SVC and MLPClassifier.
 
@@ -74,10 +67,10 @@ Then I experimented with different values of hyper-parameter for the better perf
 Selected model with non-default hyper-parameter values: Support Vector Classifier
 
 Non-default hyper parameters :
-	C: 10
-	break_ties: False
-	cache_size: 200
-	class_weight: None
+	C: 10\n
+	break_ties: False\n
+	cache_size: 200\n
+	class_weight: None\n
 	coef0: 0.0
 	decision_function_shape: ovr
 	degree: 3
