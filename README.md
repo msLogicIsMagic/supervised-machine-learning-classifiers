@@ -67,10 +67,11 @@ Then I experimented with different values of hyper-parameter for the better perf
 Selected model with non-default hyper-parameter values: Support Vector Classifier
 
 Non-default hyper parameters :
-	C: 10\n
-	break_ties: False\n
-	cache_size: 200\n
-	class_weight: None\n
+
+	C: 10
+	break_ties: False
+	cache_size: 200
+	class_weight: None
 	coef0: 0.0
 	decision_function_shape: ovr
 	degree: 3
